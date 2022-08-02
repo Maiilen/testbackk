@@ -1,0 +1,118 @@
+.banner{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+  
+  }
+  .uno{
+  margin:1%}
+  
+  .redes{
+    margin: 1%;
+  }
+  
+  .redes img{
+   margin-left: 5px;
+    width: 30px;
+    border-radius: 20%;
+  }
+  .redes img:hover{
+    box-shadow: -1px 1px 30px 0px rgba(161,21,161,1);
+    
+  }
+  .uno img{
+    width: 110px;
+  }
+  @media screen and (min-width:60em) {
+   .redes img{
+    width: 40px;
+    margin-right: 10px;
+   }
+   
+   .uno img{
+    width: 115px;
+   }
+   .banner{
+    height: 60px;
+   }
+    
+  }
+  .bienvenidos {
+    height: 88vh;
+    overflow: hidden;
+    overflow: visible;
+    background-attachment: fixed;
+    text-align: center;
+    perspective: 3px;
+    
+  }
+  
+  .imgFondo {
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+  }
+  .titulo{
+    transform: translateY(-100vh) translateZ(0px) scale(1);
+    font-family: monospace;
+    color: yellow;
+  
+  }
+  .titulo h1{
+    font-size: 50px;
+  
+    
+  }
+  .titulo p{
+    font-size: 19px;
+    max-width: 20%;
+  }
+  
+  .titulo p {
+   
+    max-width: 95%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 19px;
+    border-right: 0.15em solid #d9ff00;
+    margin: 0 auto;
+    animation: typing 4s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width:  100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+   border-color: transparent;}
+  }
+  @media screen and (min-width:47em) {
+    .titulo h1{
+        font-size: 70px;
+      
+        
+    }
+    .titulo p{
+        font-size: 35px;
+        max-width: 75%;
+       
+        
+    }
+  }
+  @media screen and (min-width:60em) {
+    .titulo{
+        transform: translateY(-70vh) translateZ(0px) scale(1);
+    }
+    .titulo p{
+        max-width: 45%;
+    }
+  }
