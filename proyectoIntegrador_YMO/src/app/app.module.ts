@@ -7,6 +7,8 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercademiComponent } from './componentes/acercademi/acercademi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './componentes/hys/hys.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
     EncabezadoComponent,
     AcercademiComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
