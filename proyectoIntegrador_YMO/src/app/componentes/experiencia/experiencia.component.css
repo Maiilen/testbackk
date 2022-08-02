@@ -1,0 +1,127 @@
+.experiencia{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .imagenF img{
+    width: 100%;
+    margin-top: 120px;
+    min-height: 350px;
+  position: relative;
+    }
+  
+  .cajaE{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-60vh) translateZ(0px) scale(1);
+    align-items: center;
+  }
+  
+  .tituloExp{
+    color: yellow;
+    font-family: 'Fredoka One', cursive;
+   
+    font-size: 30px;
+  }
+  .tituloExp p::before{
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 4px;
+    background:yellow;
+    top:16%;  
+     
+    
+  
+  }
+  .pfa{
+    font-family: 'Fredoka One', cursive;
+  color: #5073b8;
+  font-size: 16px;
+  }
+  .primerexp {
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .primerexp img{
+    
+    width: 30%;
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  @media screen and (min-width:27em){
+    .tituloExp{
+        font-size: 40px;
+    }
+    .tituloExp p::before{
+        margin-top: 15px;
+        width: 220px;
+    }
+    .flexbe div{
+        display: flex;
+        gap: 5%;
+        align-items: center;
+    }
+    .flexbe img{
+        width: 18%;
+    }
+    .arribaj{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        font-size: 18px;
+    }
+  
+    .pfa{
+        width: 100%;
+        font-size: 23px;
+    }
+  
+    .cajaE{
+     
+        transform: translateY(-70vh) translateZ(0px) scale(1);
+    
+    }
+    .imagenF {
+        width: 90%;
+        margin: auto;
+    }
+  }
+  @media screen and (min-width:50em){
+    .cajaE{
+     
+        transform: translateY(-70vh) translateZ(0px) scale(1);
+    
+    }
+    .imagenF {
+        width: 70%;
+        margin: auto;
+    }
+    .flexbe div{
+        display: flex;
+        gap: 5%;
+        align-items: center;
+    }
+    .flexbe img{
+        width: 20%;
+    }
+    .arribaj{
+       
+        font-size: 20px;
+    }
+    .pfa{
+        font-size: 23px;
+    }
+  
+    .cajaE{
+     
+        transform: translateY(-70vh) translateZ(0px) scale(1);
+    
+    }
+   
+  
+  
+  }
