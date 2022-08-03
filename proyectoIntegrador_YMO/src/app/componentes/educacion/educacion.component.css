@@ -3,7 +3,7 @@
     font-family: 'Fredoka One', cursive;
    text-align: center;
     font-size: 30px;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 .educacion p::before{
     content: "";
@@ -25,8 +25,8 @@ flex-direction: column;
 text-align: center;
 align-items: center; 
 font-size: 15px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Times, serif;
-color:rgba(8, 218, 233, 0.842);
+font-family: monospace;
+color:rgba(255, 255, 255, 0.842);
 
 
 
@@ -37,13 +37,16 @@ color:rgba(8, 218, 233, 0.842);
 width: 100%;
 margin-bottom: 5%;
 border-radius: 5%;
-background-image: url(../../../assets/pngtree-wall-rock-texture-grain-dark-gray-background-image_780289.jpg);
+background-color: rgb(6, 6, 12);
+border-top-style: groove;
+border-top-color: rgb(0, 110, 255);
 
 }
 .ti{
 font-size: 16px;
 font-family: 'Fredoka One', cursive;
 color:rgb(248, 0, 103);
+
 }
 
 .pp{
@@ -51,14 +54,15 @@ margin-bottom: 5%;
 }
 .fech{
 color:rgb(173, 175, 66);
-margin-bottom: 5%;
+margin-bottom: 1%;
 }
 
 .estudio img{
 width: 70px;
 background-color: white;
 border-radius: 10%;
-margin-top: 10%
+margin-top: 5%;
+
 
 }
 .estudio img:hover{
@@ -94,10 +98,13 @@ height: 280px;
     .e1{
         height: 300px;
         padding: 1%;
+        padding-bottom: 20%;
     }
     .estudio{
         width: 80%;
         margin: auto;
+        font-size: 14px;
+        
     }
     .educacion {
         font-size: 40px;

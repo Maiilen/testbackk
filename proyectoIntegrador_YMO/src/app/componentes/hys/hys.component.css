@@ -1,0 +1,28 @@
+.row{
+   width: 70%;
+   margin: auto;
+ 
+   
+}
+.hys{
+transform: translateY(-40vh) translateZ(0px) scale(1);}
+.row div{
+    margin-bottom: 40px;
+}
+p{
+    text-align: center;
+    color: yellow;
+  
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+position:relative;
+margin-bottom: 10%;}
+p::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 4px;
+    background:yellow;
+    top:86%;    
+    
+  }

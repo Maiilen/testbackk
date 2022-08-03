@@ -1,6 +1,6 @@
 .secionsobremi{
     color: white;
-     transform: translateY(30vh) translateZ(0px) scale(1);
+     transform: translateY(18vh) translateZ(0px) scale(1);
      display: flex;
      flex-direction: column;
      width: 90%;
@@ -57,7 +57,7 @@
       width: 185px;
       height: 4px;
       background:yellow;
-      top:6%;    
+      top:5%;    
       
     }
     .tex2{
