@@ -1,4 +1,5 @@
 .secionsobremi{
+  font-size: 16px;
     color: white;
      transform: translateY(18vh) translateZ(0px) scale(1);
      display: flex;
@@ -6,14 +7,19 @@
      width: 90%;
      margin: auto;
      text-align: center;
-      font-family: monospace;
+     font-family: 'Inter', sans-serif;
       margin-top: 110px;
       margin-bottom: 40px;
     }
+    
     .tex1{
       margin-top: 5%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
+      font-family: monospace;
     }
+  .tex1 p{
+    margin: 0;
+  }
     .gradient-border {
       --borderWidth: 2%;
       position: relative;
@@ -57,12 +63,12 @@
       width: 185px;
       height: 4px;
       background:yellow;
-      top:5%;    
+      top:4%;    
       
     }
     .tex2{
       color: rgb(0, 37, 202);
-      font-size: 12px;
+      font-size: 16px;
     }
     .subtitulo p{
       color: yellow;
