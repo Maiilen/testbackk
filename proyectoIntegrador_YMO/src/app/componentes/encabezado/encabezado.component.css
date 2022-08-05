@@ -64,7 +64,7 @@
   
   }
   .titulo h1{
-    font-size: 50px;
+    font-size: 60px;
   
     
   }
@@ -115,4 +115,13 @@
     .titulo p{
         max-width: 45%;
     }
+  }
+  @media screen and (min-width:80em){
+    .titulo p {
+    font-size: 37px;
+    }
+    .titulo h1{
+font-size: 100px;
+    }
+
   }

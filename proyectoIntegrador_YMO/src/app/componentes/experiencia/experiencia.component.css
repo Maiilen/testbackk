@@ -1,69 +1,78 @@
 .experiencia{
     width: 90%;
     margin: auto;
+    transform: translateY(55vh) translateZ(0px) scale(1);
+    background-color: rgb(6, 6, 12);
+    padding: 5%;
+    border-radius: 1em;
+    font-size: 17px;
+
+
   }
-  
-  .imagenF img{
-    width: 100%;
-    margin-top: 120px;
-    min-height: 350px;
-  position: relative;
-    }
-  
-  .cajaE{
+  .flexbe div{
+    background-color:rgb(17, 17, 24);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    transform: translateY(-60vh) translateZ(0px) scale(1);
     align-items: center;
+    border-radius: 1em;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
   }
-  
   .tituloExp{
     color: yellow;
     font-family: 'Fredoka One', cursive;
-   
-    font-size: 30px;
+   text-align: center;
+    font-size: 40px;
+    margin-bottom: 10%;
   }
   .tituloExp p::before{
     content: "";
     position: absolute;
-    width: 170px;
+    width: 228px;
     height: 4px;
     background:yellow;
-    top:16%;  
+    top:21%;  
      
     
   
   }
+  .arribaj p{
+    margin: 0;
+  
+  }
+  
   .pfa{
     font-family: 'Fredoka One', cursive;
-  color: #5073b8;
-  font-size: 17px;
+    color: #5073b8;
   }
   .primerexp {
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+
+    text-align: center;
   }
   .primerexp img{
     
     width: 30%;
     border-radius: 100%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin:5%;
+   
   }
-  @media screen and (min-width:27em){
+  @media screen and (min-width:47em){
     .tituloExp{
         font-size: 40px;
+        
     }
     .tituloExp p::before{
-        margin-top: 15px;
-        width: 220px;
+    top:15%;
+        width: 225px;
     }
     .flexbe div{
         display: flex;
         gap: 5%;
         align-items: center;
+        
     }
     .flexbe img{
         width: 18%;
@@ -82,7 +91,7 @@
   
     .cajaE{
      
-        transform: translateY(-70vh) translateZ(0px) scale(1);
+        transform: translateY(-1vh) translateZ(0px) scale(1);
     
     }
     .imagenF {
@@ -90,23 +99,24 @@
         margin: auto;
     }
   }
-  @media screen and (min-width:50em){
+  @media screen and (min-width:60em){
     .cajaE{
      
-        transform: translateY(-70vh) translateZ(0px) scale(1);
+        transform: translateY(-5vh) translateZ(0px) scale(1);
     
     }
-    .imagenF {
-        width: 70%;
-        margin: auto;
-    }
+    .tituloExp p::before{
+      top:12%;
+      
+      }
+  
     .flexbe div{
         display: flex;
         gap: 5%;
         align-items: center;
     }
     .flexbe img{
-        width: 20%;
+        width: 15%;
     }
     .arribaj{
        
@@ -116,12 +126,24 @@
         font-size: 23px;
     }
   
-    .cajaE{
-     
-        transform: translateY(-70vh) translateZ(0px) scale(1);
     
-    }
-   
   
   
   }
+  @media screen and (min-width:80em){
+    .experiencia{
+    transform: translateY(35vh) translateZ(0px) scale(1);
+     width: 70%;
+     height: 460px;
+  }
+.flexbe div{
+  height: 300px;
+  
+      transform: translateY(-8vh) translateZ(0px) scale(1);
+    
+  
+}
+.primerexp img{
+  margin: 6%;
+}
+}
