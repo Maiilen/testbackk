@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { HeaderComponent } from './componentes/header/header.component';
 import { AcercademiComponent } from './componentes/acercademi/acercademi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
@@ -14,10 +14,12 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
+    HeaderComponent,
     AcercademiComponent,
     ExperienciaComponent,
     EducacionComponent,
@@ -28,6 +30,7 @@ import { LoginComponent } from './componentes/login/login.component';
     LoginComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
@@ -49,7 +52,9 @@ import { LoginComponent } from './componentes/login/login.component';
       "lazy": true}),
       HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

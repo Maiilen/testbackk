@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.portfolio.ymo.Security.Entity;
 
 import com.portfolio.ymo.Security.Enums.RolNombre;
@@ -19,9 +23,8 @@ public class Rol {
     @Enumerated(EnumType.STRING)
     private RolNombre rolNombre;
     
-    
     //Constructor
-    public Rol(){
+    public Rol() {
     }
 
     public Rol(RolNombre rolNombre) {
@@ -47,7 +50,4 @@ public class Rol {
     }
     
     
-    
 }
-
-
