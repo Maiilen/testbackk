@@ -36,7 +36,6 @@ public class CExperiencia {
         List<Experiencia> list = sExperiencia.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
-    
     @GetMapping("/detail/{id}")
     public ResponseEntity<Experiencia> getById(@PathVariable("id") int id){
         if(!sExperiencia.existsById(id))
@@ -44,6 +43,7 @@ public class CExperiencia {
         Experiencia experiencia = sExperiencia.getOne(id).get();
         return new ResponseEntity(experiencia, HttpStatus.OK);
     }
+   
     
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
