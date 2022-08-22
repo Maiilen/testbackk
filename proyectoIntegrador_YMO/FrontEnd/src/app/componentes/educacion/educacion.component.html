@@ -1,49 +1,111 @@
 <div class="contenedor">
-    <div class="educacion">
-   <p>Educación</p></div>
 
-   <div class="estudio">
+  <div class="educacion">
 
-     <div class="e1">
-   <a href="https://www.unlam.edu.ar/" target="_blank" ><img src="../../../assets/logo_unlam.png"></a>
-   <div class="t1">
-     <p class="ti">Tecnicatura Universitaria en Desarrollo Web 
-       </p>
-       <p class="fech"> 2021/ACTUALIDAD</p>
-       <p class="pp">Universidad Nacional de La Matanza<br>
-         Promedio: 8.78</p></div></div>
+    <p>Educación</p></div>
 
-       <div class="e1">
-       <a href="https://www.oracle.com/ar/education/oracle-next-education/" target="_blank"><img src="../../../assets/Oracle-ONE-696x425.webp"></a>
-       <div class="t2">
-       <p class="ti"> Developer Jr. <br>Curso de Oracle Next Education</p>
-                  <p class="fech">21/07/1022 - ACTUALIDAD</p>
-        <p class="pp">Certificado avalado por ORACLE y Alura LATAM.</p></div></div>
-        
-        <div class="e1">
-   <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img src="../../../assets/logoargentinaprograma.png"></a>
-   <div class="t3">
-   <p class="ti"> Fundamentos Basicos de la Programacion <br>Curso de Argentina Programa Primera Etapa </p>
-              <p class="fech">30/12/2021</p>
-   <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación 
-  y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p></div></div>
+<div class="centro">
+    <div class="ne">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        AGREGAR EDUCACION
+      </button></div>
+  
+ <div class="acomodar">
+      <div class="estudio">
+        <div class="container">
+          <div class="row mb-3">
+            
+          <div *ngFor="let Educacion of educacion">
+            <div class="e1">
+              <div class="col">
+          <a href="https://www.unlam.edu.ar/" target="_blank"><img src="../../../assets/logo_unlam.png"></a>
+          <div class="t1">
+           
+            <p class="ti">{{Educacion.nombreE}}
+            </p>
+            <p class="fech"> 2021/ACTUALIDAD</p>
+            <p class="pp">{{Educacion.descripcionE}}</p>
+          </div>
+        </div>
+      
 
-   <div class="e1">
-  <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img src="../../../assets/logoargentinaprograma.png"></a>
-  <div class="t4">
-  <p class="ti">Full Stack Developer Jr.<br>Curso de Argentina Programa Segunda Etapa</p>
-             <p class="fech">2022</p>
-   <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación 
-   y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p></div></div>
+        <div class="botone">
 
-   <div class="e1">
-   <a href="https://www.argentina.gob.ar/ingles-para-desarrollo-de-software" target="_blank"><img src="../../../assets/logoargentinaprograma.png"></a>
-   <div class="t5">
-  <p class="ti">Curso de Ingles para Desarrollo de Software</p>
-             <p class="fech">2022</p>
-   <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación 
-   y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p>
-   </div></div>
-   
- </div>
- </div>
+          <div class="botones">
+            <div *ngIf="isLogged" class="btned">
+              <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                EDITAR</button>
+            </div>
+            <div *ngIf="isLogged" class="btnbo">
+              <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                BORRAR</button>
+            </div>
+          </div></div></div>
+        </div></div></div>
+        </div></div></div></div>
+    
+   <!--
+        <div class="estudio">
+          <div class="e1">
+            <a href="https://www.oracle.com/ar/education/oracle-next-education/" target="_blank"><img
+              src="../../../assets/Oracle-ONE-696x425.webp"></a>
+            <div class="t1">
+              <p class="ti">{{Educacion.nombreE}}
+              </p>
+              <p class="fech">21/07/1022 - ACTUALIDAD</p>
+              <p class="pp">{{Educacion.descripcionE}}</p>
+            </div>
+          
+  
+          <div class="botone">
+  
+            <div class="botones">
+              <div *ngIf="isLogged" class="btned">
+                <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                  EDITAR</button>
+              </div>
+              <div *ngIf="isLogged" class="btnbo">
+                <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                  BORRAR</button>
+              </div>
+            </div>
+  
+          </div>
+          </div>
+        </div>
+  
+    
+
+    <div class="e1">
+      <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+        target="_blank"><img src="../../../assets/logoargentinaprograma.png"></a>
+      <div class="t3">
+        <p class="ti"> Fundamentos Basicos de la Programacion <br>Curso de Argentina Programa Primera Etapa </p>
+        <p class="fech">30/12/2021</p>
+        <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación
+          y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p>
+      </div>
+    </div>
+
+    <div class="e1">
+      <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+        target="_blank"><img src="../../../assets/logoargentinaprograma.png"></a>
+      <div class="t4">
+        <p class="ti">Full Stack Developer Jr.<br>Curso de Argentina Programa Segunda Etapa</p>
+        <p class="fech">2022</p>
+        <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación
+          y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p>
+      </div>
+    </div>
+
+    <div class="e1">
+      <a href="https://www.argentina.gob.ar/ingles-para-desarrollo-de-software" target="_blank"><img
+          src="../../../assets/logoargentinaprograma.png"></a>
+      <div class="t5">
+        <p class="ti">Curso de Ingles para Desarrollo de Software</p>
+        <p class="fech">2022</p>
+        <p class="pp">Certificado avalado por el Ministerio de Desarrollo Productivo de la Nación
+          y la Cámara Empresarial de Software y Servicios Informáticos (CESSI).</p>
+      </div>
+    </div>
+  </div></div></div>-->

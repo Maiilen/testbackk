@@ -3,10 +3,62 @@
     font-family: 'Fredoka One', cursive;
    text-align: center;
     font-size: 40px;
-    margin-bottom: 15%;
     margin-top: 1%;
     
 }
+
+.ne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+      
+    }
+    .ne button{
+      background-color:#18548db6;
+      border-style: none;
+    }
+    .ne button:hover{
+      
+      background-color:rgba(0, 128, 248, 0.714);
+      box-shadow: -1px 1px 20px 0px rgba(0, 128, 248, 0.714);
+      
+    }
+    .btnbo button{
+      background-color: rgba(255, 0, 0, 0.815);
+      border-style: none;
+    }
+    .btnbo button:hover{
+      background-color: red;
+      box-shadow: -1px 1px 20px 0px red;
+  
+    }
+    .btned button{
+      background-color: rgb(141, 10, 54);
+      color: wheat;
+      border-style: none;
+    }
+    .btned button:hover{
+      background-color: rgb(218, 8, 78);
+      box-shadow: -1px 1px 20px 0px rgb(218, 8, 78);
+  
+    }
+    .botones button{
+      font-size: 12px;
+    }
+    .botones{
+   
+     display: flex;
+   align-items: center;
+   justify-content: center;
+     gap: 2%;
+         
+      
+  
+     
+  
+    }
 .educacion p::before{
     content: "";
     position: absolute;
@@ -22,15 +74,18 @@ width: 90%;
 margin: auto;
 border-radius: 1em;
 padding: 1%;
+
+
+}
+.centro button{
+  margin-bottom: 7%;
+  font-size: 16px;
+  font-family: 'Fredoka One', cursive;
 }
 .estudio {
 
-width: 100%;
-margin: auto;
-display: flex;
-flex-direction: column;
+
 text-align: center;
-align-items: center; 
 font-size: 15px;
 font-family: 'Inter', sans-serif;
 color:rgba(255, 255, 255, 0.842);
@@ -40,12 +95,15 @@ color:rgba(255, 255, 255, 0.842);
 .e1{
 
 
-width: 88%;
+
+width: 90%;
+margin: auto;
 margin-bottom: 5%;
 border-radius: 5%;
 background-color: rgb(17, 17, 24);
 border-top-style: groove;
 border-top-color: rgb(0, 110, 255);
+padding-bottom: 2%;
 }
 .ti{
 font-size: 16px;
@@ -79,62 +137,39 @@ box-shadow: -1px 1px 30px 0px rgba(27, 60, 207, 0.945);
 }
 
 @media screen and (min-width:47em){
-.e1{
-width: 40%;
-height: 380px;
-padding: 1%;
+.centro {
+  display: flex;
+  flex-direction: column; 
 }
 
-.estudio {
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
- }
-    
+.estudio{
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
-@media screen and (min-width:60em){
-    .estudio img{
-        width: 80px;
-        margin-bottom: 5%;
+        
     }
-  
-    .ti{font-size: 18px;}
-    .e1{
+    .botones{
+   
+      display: flex;
+    align-items: center;
+    justify-content: center;
+      gap: 2%;
+          
        
-        height: 300px;
-        padding: 1%;
-        padding-bottom: 20%;
-    }
-    .estudio{
-        width: 90%;
-        margin: auto;
-        font-size: 14px;
-
-        
-    }
-    .educacion {
-        font-size: 40px;
-    
-     margin-bottom: 5%;
-        
-    }
-    .educacion p::before{
-        width: 198px;
-        margin-top: 47px;
-    }
-
-    .contenedor{
-        width: 90%;
-        transform: translateY(65vh) translateZ(0px) scale(1);
-     
-    }
-    .e1{
-        width: 40%;
-        height: 380px;
-}}
+   
+      
+   
+     }
+@media screen and (min-width:60em){
+ 
+  
+  .e1{
+  width: 70%;
+  padding: 2%;
+ }
+}
 @media screen and (min-width:80em){
     .contenedor{
         width: 70%;

@@ -8,7 +8,53 @@
   }
   .dos{
 margin-bottom: 3%;  }
+.ne{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  }
+  .ne button{
+    background-color:#18548db6;
+    border-style: none;
+  }
+  .ne button:hover{
+    
+    background-color:rgba(0, 128, 248, 0.714);
+    box-shadow: -1px 1px 20px 0px rgba(0, 128, 248, 0.714);
+    
+  }
+  .btnbo button{
+    background-color: rgba(255, 0, 0, 0.815);
+    border-style: none;
+  }
+  .btnbo button:hover{
+    background-color: red;
+    box-shadow: -1px 1px 20px 0px red;
 
+  }
+  .btned button{
+    background-color: rgb(141, 10, 54);
+    color: wheat;
+    border-style: none;
+  }
+  .btned button:hover{
+    background-color: rgb(218, 8, 78);
+    box-shadow: -1px 1px 20px 0px rgb(218, 8, 78);
+
+  }
+  .botones{
+ 
+   display: flex;
+ align-items: center;
+ justify-content: center;
+   gap: 2%;
+    
+
+   
+
+  }
   .cajaE{
     display: flex;
     flex-direction: column;
@@ -75,9 +121,9 @@ margin: auto;}
         width: 195px;
     }
     .flexbe div{
-        display: flex;
+        margin: auto;
         gap: 5%;
-       
+       text-align: center;
         margin-top: 2%;
         align-items: center;
     }
@@ -103,6 +149,10 @@ margin: auto;}
         width: 100%;
         font-size: 23px;
     }
+    .flexbe{
+      width: 70%;
+      
+    }
   
     .cajaE{
      
@@ -127,16 +177,6 @@ margin: auto;}
     }
     
     
-    .flexbe{
-        width: 80%;
-        margin: auto;
-    }
-    .flexbe div{
-        display: flex;
-        
-        align-items: center;
-        
-    }
     .flexbe img{
         width: 40%;
     }
