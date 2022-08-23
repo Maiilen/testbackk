@@ -1,6 +1,54 @@
 <div class="hys">
-<p>Habilidades</p>
-<div  class="row">
+ 
+    <p>Habilidades</p>
+    <div class="ne">
+    <button type="button" class="btn btn-secondary" routerLink="/nuevaskill" *ngIf="isLogged">
+      AGREGAR HABILIDAD
+    </button></div>
+    <div  class="row">
+    <div class="col-lg-2">
+    
+    </div>
+  
+  
+    <div *ngFor= "let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4">
+      
+      <circle-progress
+      [percent]="skill.descripcionS"
+      [radius]="70"
+      [showUnits]="false"
+      [imageSrc]="'../assets/htmlimg.png'"
+      [showImage]="true"
+      [imageHeight]="100"
+      [imageWidth]="110"
+      [showSubtitle]="false"
+      [outerStrokeWidth]="7"
+      [innerStrokeWidth]="1"
+      [outerStrokeColor]="'#ff4500'"
+      [innerStrokeColor]="'#cc008f'"
+      [animation]="true"
+      [animationDuration]="1000"
+      >
+      </circle-progress>
+  <div class="porcentaje">
+      <div *ngIf="isLogged">
+        <button class="btn btn-outline-secondary" routerLink="/editskill/{{skill.id}}">
+        <i class="bi bi-pencil"></i></button>
+        </div>
+      
+      <div *ngIf="isLogged">
+        <button class="btn btn-outline-danger" (click)="delete(skill.id)">
+        <i class="bi bi-trash"></i></button>
+        </div>
+  </div> 
+    </div>
+  
+
+    </div>
+
+
+<!--
+
     
     <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
@@ -112,4 +160,4 @@
         </div>
 
 </div>
-</div>
+</div>-->

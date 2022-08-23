@@ -1,4 +1,35 @@
+.porcentaje{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4%;
+  
 
+}
+
+.ne{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 2%;
+ 
+  
+  
+  
+  
+    
+  }
+  .ne button{
+    background-color:#18548db6;
+    border-style: none;
+  }
+  .ne button:hover{
+    
+    background-color:rgba(0, 128, 248, 0.714);
+    box-shadow: -1px 1px 20px 0px rgba(0, 128, 248, 0.714);
+    
+  }
 .hys{
   display: flex;
   flex-direction: column;
@@ -30,7 +61,7 @@ p{
   font-size: 42px;
   font-family: 'Fredoka One', cursive;
 position:relative;
-margin-bottom: 10%;}
+}
 p::before{
     content: "";
     position: absolute;
@@ -50,10 +81,13 @@ p::before{
       width: 90%;
       transform: translateY(76vh) translateZ(0px) scale(1);
     }
+   
+  
   }
   @media screen and (min-width:80em){
     .hys{
       width: 70%;
       transform: translateY(55vh) translateZ(0px) scale(1);
     }
+  
   }
