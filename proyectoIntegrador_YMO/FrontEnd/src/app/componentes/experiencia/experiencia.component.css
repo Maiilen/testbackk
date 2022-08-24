@@ -168,6 +168,7 @@
         display: flex;
         gap: 5%;
         align-items: center;
+        
     }
     .flexbe img{
         width: 15%;
@@ -188,7 +189,7 @@
     .experiencia{
     transform: translateY(30vh) translateZ(0px) scale(1);
      width: 70%;
-     height: 910px;
+     height: auto;
 
      
     
@@ -216,7 +217,7 @@
 }
 
 .botone{
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 
 }
 .tituloExp p::before{
