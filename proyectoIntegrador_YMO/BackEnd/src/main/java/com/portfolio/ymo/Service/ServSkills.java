@@ -22,9 +22,7 @@ public class ServSkills {
         return rSkills.findById(id);
     }
     
-    public Optional<Skills> getByNombreS(String nombreS){
-        return rSkills.findByNombreS(nombreS);
-    }
+  
     
     public void save(Skills skill){
         rSkills.save(skill);
@@ -38,8 +36,6 @@ public class ServSkills {
         return rSkills.existsById(id);
     }    
     
-    public boolean existsByNombreS(String nombreS){
-        return rSkills.existsByNombreS(nombreS);
-    }
+   
     
 }

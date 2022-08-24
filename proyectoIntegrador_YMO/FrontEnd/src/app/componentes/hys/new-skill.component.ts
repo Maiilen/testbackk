@@ -10,7 +10,7 @@ import { ServSkillsService } from 'src/app/service/serv-skills.service';
 })
 export class NewSkillComponent implements OnInit {
 
-  nombreS: string = '';
+  img: string;
   descripcionS: number ;
 
   constructor(private servSkills: ServSkillsService, private router: Router) { }
@@ -18,7 +18,7 @@ export class NewSkillComponent implements OnInit {
   ngOnInit(): void {}
 
   onCreate(): void {
-    const skill = new Skills(this.nombreS, this.descripcionS);
+    const skill = new Skills(this.img, this.descripcionS);
     this.servSkills.save(skill).subscribe(
       (data) => {
         alert('Skill añadida');

@@ -4,15 +4,21 @@
   justify-content: center;
   gap:4%;
   
+  
 
 }
-
+.circle-progress{
+  margin-top:200px;
+}
+.porcentaje div{
+  margin:5px;
+}
 .ne{
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Fredoka One', cursive;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
  
   
   

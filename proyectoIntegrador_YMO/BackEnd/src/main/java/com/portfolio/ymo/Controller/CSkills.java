@@ -51,12 +51,11 @@ public class CSkills {
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoSkills dtoskills){      
-        if(StringUtils.isBlank(dtoskills.getNombreS()))
-            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        if(servSkills.existsByNombreS(dtoskills.getNombreS()))
-            return new ResponseEntity(new Mensaje("Esa skill existe"), HttpStatus.BAD_REQUEST);
+        if(StringUtils.isBlank(dtoskills.getImg()))
+            return new ResponseEntity(new Mensaje("El link es obligatorio"), HttpStatus.BAD_REQUEST);
         
-        Skills skill = new Skills(dtoskills.getNombreS(), dtoskills.getDescripcionS());
+        
+        Skills skill = new Skills(dtoskills.getImg(), dtoskills.getDescripcionS());
         servSkills.save(skill);
         
         return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
@@ -67,15 +66,13 @@ public class CSkills {
         //Validamos si existe el ID
         if(!servSkills.existsById(id))
             return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.BAD_REQUEST);
-        //Compara nombre de experiencias
-        if(servSkills.existsByNombreS(dtoskills.getNombreS()) && servSkills.getByNombreS(dtoskills.getNombreS()).get().getId() != id)
-            return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
+       
         //No puede estar vacio
-        if(StringUtils.isBlank(dtoskills.getNombreS()))
-            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+        if(StringUtils.isBlank(dtoskills.getImg()))
+            return new ResponseEntity(new Mensaje("El Link no puede estar vacio"), HttpStatus.BAD_REQUEST);
         
         Skills skill = servSkills.getOne(id).get();
-        skill.setNombreS(dtoskills.getNombreS());
+        skill.setImg(dtoskills.getImg());
         skill.setDescripcionS((dtoskills.getDescripcionS()));
         
         servSkills.save(skill);

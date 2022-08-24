@@ -48,7 +48,7 @@ public class PersonaController {
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setImg(nuevoImg);
-
+        
         ipersonaService.savePersona(persona);
         return persona;
     }

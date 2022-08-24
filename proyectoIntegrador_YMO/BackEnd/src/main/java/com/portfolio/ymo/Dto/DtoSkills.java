@@ -5,7 +5,7 @@ import javax.validation.constraints.NotBlank;
 
 public class DtoSkills {
     @NotBlank
-    private String nombreS;
+    private String img;
     @NotBlank
     private int descripcionS;
     
@@ -13,17 +13,17 @@ public class DtoSkills {
     public DtoSkills() {
     }
 
-    public DtoSkills(String nombreS, int descripcionS) {
-        this.nombreS = nombreS;
+    public DtoSkills(String img, int descripcionS) {
+        this.img = img;
         this.descripcionS = descripcionS;
     }
     
-    public String getNombreS() {
-        return nombreS;
+    public String getImg() {
+        return img;
     }
 
-    public void setNombreS(String nombreS) {
-        this.nombreS = nombreS;
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public int getDescripcionS() {

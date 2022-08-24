@@ -65,7 +65,7 @@ public class CProyectos {
         }
         
         Proyectos proyectos = new Proyectos(
-                dtoproyectos.getNombreP(), dtoproyectos.getDescripcionP()
+                dtoproyectos.getImg(), dtoproyectos.getNombreP(), dtoproyectos.getDescripcionP()
             );
         sProyectos.save(proyectos);
         return new ResponseEntity(new Mensaje("Proyecto creado"), HttpStatus.OK);
@@ -80,14 +80,15 @@ public class CProyectos {
         if(sProyectos.existsByNombreP(dtoproyectos.getNombreP()) && sProyectos.getByNmbreP(dtoproyectos.getNombreP()).get().getId() != id){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
-        if(StringUtils.isBlank(dtoproyectos.getNombreP())){
-            return new ResponseEntity(new Mensaje("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
-        }
+        
+        if(StringUtils.isBlank(dtoproyectos.getImg()))
+            return new ResponseEntity(new Mensaje("El Link no puede estar vacio"), HttpStatus.BAD_REQUEST);
         
         Proyectos proyectos = sProyectos.getOne(id).get();
         
         proyectos.setNombreP(dtoproyectos.getNombreP());
         proyectos.setDescripcionP(dtoproyectos.getDescripcionP());
+        proyectos.setImg(dtoproyectos.getImg());
         
         sProyectos.save(proyectos);
         

@@ -17,13 +17,23 @@ public class Proyectos {
     private int id;
     private String nombreP;
     private String descripcionP;
+     private String img;
 
     public Proyectos() {
     }
 
-    public Proyectos(String nombreP, String descripcionP) {
+    public Proyectos(String img, String nombreP, String descripcionP) {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
+        this.img = img;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public int getId() {
