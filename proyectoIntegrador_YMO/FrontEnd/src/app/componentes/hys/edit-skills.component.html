@@ -3,16 +3,17 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="img">Url de la imagen de la habilidad:</label>
+                    <label for="img">URL de la imagen de la habilidad</label>
                     <input type="text" class="form-control" id="img" name="img" [(ngModel)]="skill.img" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionS">Porcentaje de la skill</label>
+                    <label for="descripcionS">Porcentaje de la habilidad</label>
                     <input type="text" class="form-control" id="descripcionS" name="descripcionS" [(ngModel)]="skill.descripcionS" required>
                 </div>
+                <div class="botons">
                 <button class="btn btn-primary">
-                    Actualizar
-                </button>
+                    ACTUALIZAR HABILIDAD
+                </button></div>
 
             </form>
         </div>
