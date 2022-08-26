@@ -16,12 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendymo.web.app")
+
 public class PersonaController {
 
     @Autowired IPersonaService ipersonaService;
 
-    @GetMapping("personas/traer")
+    @GetMapping("/personas/traer")
     public List<Persona> getPersona() {
         return ipersonaService.getPersona();
     }
@@ -43,6 +44,8 @@ public class PersonaController {
             @RequestParam("nombre") String nuevoNombre,
             @RequestParam("apellido") String nuevoApellido,
             @RequestParam("img") String nuevoImg) {
+        
+        
         Persona persona = ipersonaService.findPersona(id);
 
         persona.setNombre(nuevoNombre);
@@ -58,3 +61,4 @@ public class PersonaController {
         return ipersonaService.findPersona((long) 1);
     }
 }
+

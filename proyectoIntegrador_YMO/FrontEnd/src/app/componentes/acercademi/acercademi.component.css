@@ -1,8 +1,13 @@
-
+/*@media screen and (min-height:100px) AND (min-width:100px){
+  .secionsobremi div{
+    transform: translateY(-5vh) translateZ(0px) scale(1);
+    
+  }
+}*/
 .secionsobremi{
   font-size: 16px;
     color: white;
-     transform: translateY(45vh) translateZ(0px) scale(1);
+     transform: translateY(50vh) translateZ(0px) scale(1);
      display: flex;
      flex-direction: column;
      width: 90%;
@@ -127,6 +132,9 @@
           }
        
     }
+    .secionsobremi{
+      transform: translateY(25vh) translateZ(0px) scale(1);
+    }
     /*compu*/
     @media screen and (min-width:60em){
       .iaa{
@@ -140,7 +148,7 @@
       width: 248px;
     top: 16%;}
     .secionsobremi{
-     transform: translateY(50vh) translateZ(0px) scale(1);
+     transform: translateY(30vh) translateZ(0px) scale(1);
 
     }
     }

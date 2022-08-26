@@ -7,7 +7,8 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  URL = 'http://localhost:8080/proyectos/';
+  URL = 'https://backendymo.herokuapp.com/proyectos/';
+
 
   constructor(private httpClient : HttpClient) { }
 

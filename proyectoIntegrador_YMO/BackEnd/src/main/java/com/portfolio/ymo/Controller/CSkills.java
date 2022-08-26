@@ -19,8 +19,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("skill")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/skill")
+@CrossOrigin(origins = "https://frontendymo.web.app")
+
 public class CSkills {
     @Autowired
     ServSkills servSkills;

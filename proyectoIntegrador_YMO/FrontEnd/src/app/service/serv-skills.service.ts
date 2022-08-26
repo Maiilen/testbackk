@@ -8,7 +8,7 @@ import { Skills } from '../model/skills';
 })
 export class ServSkillsService {
 
-  skillURL = 'http://localhost:8080/skill/'
+ skillURL = 'https://backendymo.herokuapp.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -20,8 +20,11 @@
   <div class="cajaE">
     <div class="tituloExp">
       <p>Experiencia</p>
-    </div>
-   
+    
+    <div class="ne">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+        NUEVA EXPERIENCIA
+      </button></div></div>
     <div class="separar">
     <div *ngFor="let Experiencia of expe">
 
@@ -31,14 +34,12 @@
           
           <div class="arribaj">
             <p class="pfa">{{Experiencia.nombreE}}</p>
-          </div>
+          
     
-          <p>{{Experiencia.descripcionE}}</p></div></div>
+          <p>{{Experiencia.descripcionE}}</p>
+    
           <div class="botone">
-          <div class="ne">
-          <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-            Nueva Experiencia
-          </button></div>
+         
           <div class="botones">
           <div *ngIf="isLogged" class="btned">
             <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
@@ -48,8 +49,8 @@
             <button class="btn btn-danger" (click)="delete(Experiencia.id)">
                BORRAR</button>
           </div>
-          </div></div>
-          </div>
+          </div></div></div>
+          </div></div></div>
     </div>
     </div>
   

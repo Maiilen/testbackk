@@ -9,7 +9,7 @@ div{
     font-family: 'Inter', sans-serif;
  
     padding-top: 1%;
-    transform: translateY(100vh) translateZ(0px) scale(1);
+    transform: translateY(50vh) translateZ(0px) scale(1);
     background-color: black;}
 .footer:after {
     content: '';
@@ -45,6 +45,10 @@ div{
     margin-top: 2%;
     text-align: center;
     background-color: black;
+}
+@media screen and (min-width:47em) {
+ .footer{ transform: translateY(110vh) translateZ(0px) scale(1);}
+    
 }
 @media screen and (min-width:80em){
 .footer p{

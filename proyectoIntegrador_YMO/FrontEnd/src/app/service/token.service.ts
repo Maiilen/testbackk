@@ -12,7 +12,7 @@ const AUTHORITIES_KEY = 'AuthAuthorities';
 export class TokenService {
   roles: Array<string>  = [];
 
-  constructor() { }
+  constructor() { }   
 
   public setToken(token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
@@ -20,7 +20,7 @@ export class TokenService {
   }
 
   public getToken():string {
-    return sessionStorage.getItem(TOKEN_KEY)!;
+    return sessionStorage.getItem(TOKEN_KEY)!; 
   }
 
   public setUserName(userName: string): void{

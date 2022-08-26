@@ -9,6 +9,7 @@
 }
 .circle-progress{
   margin-top:200px;
+
 }
 .porcentaje div{
   margin:5px;
@@ -39,7 +40,7 @@
 .hys{
   display: flex;
   flex-direction: column;
-transform: translateY(75vh) translateZ(0px) scale(1);
+transform: translateY(25vh) translateZ(0px) scale(1);
 background-color: rgb(6, 6, 12);
 width: 90%;
 margin: auto;
@@ -51,6 +52,8 @@ border-radius: 1em;}
   padding: 5%;
   margin-bottom: 5%;
   border-radius: 1em;
+  display: flex;
+justify-content: space-around;
   
   
   
@@ -81,7 +84,9 @@ p::before{
     p::before{
       top:90%;
     }
-  }
+    .hys{
+    transform: translateY(75vh) translateZ(0px) scale(1);
+  }}
   @media screen and (min-width:60em){
     .hys{
       width: 90%;
